@@ -7,47 +7,27 @@
 </head>
 <body>
     <script>
-        let rand = Math.random()
-        let first, second, third;
-        // 0 0.33 0.66 1
+      let r1 = Math.floor(Math.random() * 3);
+      let r2 = Math.floor(Math.random() * 3);
+      let r3 = Math.floor(Math.random() * 3);
 
+      let adjective = {
+        0: "Crazy",
+        1: "Amazing",
+        2: "Fire",
+      };
+      let ShopName = {
+        0: "Engine",
+        1: "Foods",
+        2: "Garments",
+      };
+      let AnotherWord = {
+        0: "Bros",
+        1: "Limited",
+        2: "Hub",
+      };
 
-        // Lets generate the first word
-        if(rand<0.33){
-            first = "Crazy"
-        }
-        else if(rand<0.66 && rand>=0.33){
-            first = "Amazing"
-        }
-        else{
-            first = "Fire"
-        }
-
-        // Lets generate the second word
-        rand = Math.random()
-        if(rand<0.33){
-            second = "Engine"
-        }
-        else if(rand<0.66 && rand>=0.33){
-            second = "Foods"
-        }
-        else{
-            second = "Garments"
-        }
-
-        // Lets generate the third word
-        rand = Math.random()
-        if(rand<0.33){
-            third = "Bros"
-        }
-        else if(rand<0.66 && rand>=0.33){
-            third = "Limited"
-        }
-        else{
-            third = "Hub"
-        }
-
-        console.log(`${first} ${second} ${third}`)
+      console.log(`${adjective[r1]} ${ShopName[r2]} ${AnotherWord[r3]}`);
     </script>
 </body>
 </html>
